@@ -1,0 +1,2 @@
+metalsmith-better-excerpts
+==========================
