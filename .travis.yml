@@ -8,7 +8,7 @@ deploy:
   provider: npm
   email: simbo@simbo.de
   api_key:
-    secure: YZiPc7Q0QkAZgqPgQ9S5Ezd4KIASVWHB0RqxRGG+s5amhkHP0gZ+5U7Qmxe5SqEafjT6pA8/JALf/ehDGEkyVI0Sgn6IloXBkrDwtqCwUsZiqre8FlNWacHu3biNP3Xseo78PoSZ0nzLfEMPracO/0frdNYmCF4Kf+OMc7R+YfU=
+    secure: NlWOqEuCBRM7XoFbBpvpgF/3OTVWvDEhpPpxagaC8LudVwQK1/6ajEjOUcz6FfPqQ0eNbWCv7bNMLs9gnnn2mSrRe635ZMG5rJdSyk4qDqjVLCr6sTJRWrStyfjv+HXhIpiRuGcN+Bpi25BxDkCGI8I2yPDMAYXYXKY4MU9Do9A=
   on:
     tags: true
     repo: simbo/metalsmith-better-excerpts
