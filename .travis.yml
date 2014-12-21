@@ -1,6 +1,18 @@
 language: node_js
 node_js:
 - '0.10'
+addons:
+  code_climate:
+    repo_token: 9e19dee6114553cd4ae00b735b065a24488f5aa8192017570afc5594474f312e
+deploy:
+  provider: npm
+  email: simbo@simbo.de
+  api_key:
+    secure: RST7i5jC/Jpe3GhziGm5TJbInpvNuq5D8M/HJkOOeBSjfS1ITrPVAkcEDhrv1NyVl3ifoVViSZWHkkmTCffEVk78Ds4+CejLpEVJ4Qmb2O1ahHExtUtOdzwbFl80eC4Ws5JpGAdaxqEg6R5pnbbUoHFlCiqVrfZRDhQpqgYRjEM=
+  on:
+    tags: true
+    repo: simbo/metalsmith-better-excerpts
+    all_branches: true
 after_script:
 - npm run cover
 - cat coverage/lcov.info | ./node_modules/.bin/codeclimate
