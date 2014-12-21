@@ -28,13 +28,13 @@ with `stripTags`.
 ## Installation
 
 ``` sh
-$ npm install metalsmith-robotskirt
+$ npm install metalsmith-better-excerpts
 ```
 
 
 ## CLI Usage
 
-Install via npm and then add the metalsmith-robotskirt key to your
+Install via npm and then add the metalsmith-better-excerpts key to your
 _metalsmith.json_ with any options you want, like so:
 
 ``` json
