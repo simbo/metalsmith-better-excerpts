@@ -13,6 +13,8 @@ deploy:
     tags: true
     repo: simbo/metalsmith-better-excerpts
     all_branches: true
+before_script:
+- npm install -g mocha istanbul codeclimate-test-reporter
 after_script:
 - npm run cover
-- cat coverage/lcov.info | ./node_modules/.bin/codeclimate
+- cat coverage/lcov.info | codeclimate
