@@ -19,10 +19,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/simbo/metalsmith-robotskirt.git"
+    "url": "git://github.com/simbo/metalsmith-better-excerpts.git"
   },
   "bugs": {
-    "url": "https://github.com/simbo/metalsmith-robotskirt/issues"
+    "url": "https://github.com/simbo/metalsmith-better-excerpts/issues"
   },
   "main": "lib/index.js",
   "dependencies": {
