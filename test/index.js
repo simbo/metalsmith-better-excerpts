@@ -114,6 +114,25 @@ describe('metalsmith-better-excerpts', function() {
                 done();
             });
     });
+
+    it('should have no problem special chars', function(done) {
+        Metalsmith('test/fixtures/html-specialchars')
+            .use(markdown())
+            .use(excerpt())
+            .build(function(err, files) {
+                if (err) return done(err);
+                assert.equal(files['index.html'].excerpt, 'Lörém ipšüm dõlœr sït āmêt.');
+                done();
+            });
+    });
+
+    it('should have no problem special chars when using \'more\' tag', function(done) {
+        Metalsmith('test/fixtures/html-specialchars-more')
+            .use(markdown())
+            .use(excerpt())
+            .build(function(err, files) {
+                if (err) return done(err);
+                assert.equal(files['index.html'].excerpt, 'Lörém ipšüm dõlœr sït āmêt.');
                 done();
             });
     });
