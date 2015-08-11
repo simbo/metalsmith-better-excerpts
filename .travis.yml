@@ -1,20 +1,17 @@
 language: node_js
 node_js:
-- '0.10'
-addons:
-  code_climate:
-    repo_token: 9e19dee6114553cd4ae00b735b065a24488f5aa8192017570afc5594474f312e
+- '0.12'
 deploy:
   provider: npm
   email: simbo@simbo.de
-  api_key:
-    secure: NlWOqEuCBRM7XoFbBpvpgF/3OTVWvDEhpPpxagaC8LudVwQK1/6ajEjOUcz6FfPqQ0eNbWCv7bNMLs9gnnn2mSrRe635ZMG5rJdSyk4qDqjVLCr6sTJRWrStyfjv+HXhIpiRuGcN+Bpi25BxDkCGI8I2yPDMAYXYXKY4MU9Do9A=
+  api_key: ${NPM_API_KEY}
   on:
     tags: true
     repo: simbo/metalsmith-better-excerpts
-    all_branches: true
-before_script:
-- npm install -g mocha istanbul codeclimate-test-reporter
 after_script:
 - npm run cover
-- cat coverage/lcov.info | codeclimate
+- npm run codeclimate
+env:
+  global:
+  - secure: McfYVxzTxlnRaAkh6uOcaQTe1wZEoV0g3WkmqYxNKC6Cz/JsZZazfl+e+5HX73XnfeIF6ezEWQD3fj0/Cxq8jx73zA5xQsJbOuy3Y0jdzhERHFHKGkU+2lMo/QyI+f7ynQ3xQhzFY0oGRiLqRbyacEiaweaBaSi7eq24ihU6UXs=
+  - secure: M4wZapkbiUX1xisfDNVC5zK8kVoLBtmISiycos3anQ2Ear9sffJk9xcYvD+ceOBjEt1XrY8RFz2QD+QNkn8rUKSYCV0CBCmI9UgRH+rHYi7cVDh2/j41NfP7RpeZBWCEIURKUBF28MGcM7e65XsxR5viIEgDFV912Ip6dEObgbI=
