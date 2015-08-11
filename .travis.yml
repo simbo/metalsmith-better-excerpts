@@ -11,6 +11,7 @@ deploy:
 after_script:
 - npm run cover
 - npm run codeclimate
+sudo: false
 env:
   global:
   - secure: McfYVxzTxlnRaAkh6uOcaQTe1wZEoV0g3WkmqYxNKC6Cz/JsZZazfl+e+5HX73XnfeIF6ezEWQD3fj0/Cxq8jx73zA5xQsJbOuy3Y0jdzhERHFHKGkU+2lMo/QyI+f7ynQ3xQhzFY0oGRiLqRbyacEiaweaBaSi7eq24ihU6UXs=
