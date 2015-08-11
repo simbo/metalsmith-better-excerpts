@@ -10,9 +10,11 @@
     "more"
   ],
   "scripts": {
-    "test": "mocha -R spec",
-    "cover": "istanbul cover _mocha -- -R spec",
-    "lint": "jshint ./lib/index.js"
+    "test": "mocha -R spec --harmony",
+    "lint": "jshint ./lib/*.js & jscs ./lib/*.js",
+    "cover": "node --harmony ./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- -R spec --harmony",
+    "watch": "mocha -R spec -w --harmony",
+    "codeclimate": "codeclimate-test-reporter < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
