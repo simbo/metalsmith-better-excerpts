@@ -22,6 +22,10 @@
     "url": "https://github.com/simbo/metalsmith-better-excerpts/issues"
   },
   "main": "lib/index.js",
+  "files": [
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "cheerio": "^0.19.0",
     "lodash": "^3.7.0",
