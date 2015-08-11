@@ -1,5 +1,12 @@
 {
-  "strict": true,
   "node": true,
-  "quotmark": "single"
+  "globals": {
+    "describe": true,
+    "it": true
+  },
+  "strict": true,
+  "undef": true,
+  "unused": true,
+  "validthis": true,
+  "maxcomplexity": 5
 }
