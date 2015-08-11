@@ -28,17 +28,17 @@
   ],
   "dependencies": {
     "cheerio": "^0.19.0",
-    "lodash": "^3.7.0",
-    "underscore.string": "^3.0.3"
+    "lodash": "^3.10.1",
+    "underscore.string": "^3.1.1"
   },
   "devDependencies": {
     "assert-dir-equal": "^1.0.1",
-    "metalsmith": "^1.6.0",
-    "metalsmith-markdown": "^0.2.1"
     "codeclimate-test-reporter": "^0.1.0",
     "istanbul": "^0.3.17",
     "jscs": "^2.0.0",
     "jshint": "^2.8.0",
+    "metalsmith": "^2.0.1",
+    "metalsmith-markdown": "^0.2.1",
     "mocha": "^2.2.5"
   }
 }
