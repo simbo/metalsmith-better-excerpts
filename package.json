@@ -3,10 +3,7 @@
   "description": "A Metalsmith plugin to extract/generate an excerpt from file content or metadata with multiple options.",
   "version": "0.1.5",
   "author": "Simon Lepel <simbo@simbo.de>",
-  "license": {
-    "type": "MIT",
-    "url": "http://simbo.mit-license.org/"
-  },
+  "license": "MIT",
   "keywords": [
     "metalsmith",
     "excerpt",
