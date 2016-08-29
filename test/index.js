@@ -79,7 +79,7 @@ describe('metalsmith-better-excerpts', function() {
             });
     });
 
-    it('should do nothing when processing non-html files', function(done) {
+    it('shouldn\'t process files that don\'t match the pattern', function(done) {
         new Metalsmith('test/fixtures/basic')
             .use(excerpt())
             .build(function(err, files) {
@@ -87,6 +87,20 @@ describe('metalsmith-better-excerpts', function() {
                     return done(err);
                 }
                 assert.equal(undefined, files['index.md'].excerpt);
+                done();
+            });
+    });
+
+    it('should allow setting a custom pattern', function(done) {
+        new Metalsmith('test/fixtures/pattern')
+            .use(excerpt({
+                pattern: '**/*.swig'
+            }))
+            .build(function(err, files) {
+                if (err) {
+                    return done(err);
+                }
+                assert.equal('content', files['index.swig'].excerpt);
                 done();
             });
     });

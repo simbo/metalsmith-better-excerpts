@@ -16,12 +16,12 @@ metalsmith-better-excerpts
 
 ## About
 
-***metalsmith-better-excerpts*** will generate an excerpt for each *file* object 
-either from frontmatter/metadata, from content until the first `more` tag or 
-from the first paragraph in content. So generated excerpt content can be 
-additionally parsed by 
-[underscore.string](https://github.com/epeli/underscore.string)'s 
-`stripTags` and `prune` functions, although `prune` can only be used together 
+***metalsmith-better-excerpts*** will generate an excerpt for each *file* object
+either from frontmatter/metadata, from content until the first `more` tag or
+from the first paragraph in content. So generated excerpt content can be
+additionally parsed by
+[underscore.string](https://github.com/epeli/underscore.string)'s
+`stripTags` and `prune` functions, although `prune` can only be used together
 with `stripTags`.
 
 
@@ -72,6 +72,7 @@ All options are optional...
 var defaultOptions = {
         moreRegExp: /\s*<!--\s*more\s*-->/i,
         stripTags: true,
+        pattern: '**/*.html',
         pruneLength: 140,
         pruneString: '…'
     };
