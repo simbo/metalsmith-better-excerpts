@@ -63,7 +63,9 @@ metalsmith.use(excerpts({
 
 ## Options
 
-All options are optional...
+All options are optional.
+
+Set `pruneLength` to `0` to disable pruning.
 
 
 ### Defaults
