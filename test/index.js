@@ -158,4 +158,17 @@ describe('metalsmith-better-excerpts', function() {
             });
     });
 
+    it('should have no problem emoji', function(done) {
+        new Metalsmith('test/fixtures/html-emoji')
+            .use(markdown())
+            .use(excerpt())
+            .build(function(err, files) {
+                if (err) {
+                    return done(err);
+                }
+                assert.equal(files['index.html'].excerpt, '☺️');
+                done();
+            });
+    });
+
 });
