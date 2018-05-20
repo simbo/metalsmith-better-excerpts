@@ -4,11 +4,11 @@ node_js:
 deploy:
   provider: npm
   email: simbo@simbo.de
-  api_key: ${NPM_API_KEY}
+  api_key: "${NPM_API_KEY}"
   on:
     tags: true
     repo: simbo/metalsmith-better-excerpts
 sudo: false
 env:
   global:
-  - secure: McfYVxzTxlnRaAkh6uOcaQTe1wZEoV0g3WkmqYxNKC6Cz/JsZZazfl+e+5HX73XnfeIF6ezEWQD3fj0/Cxq8jx73zA5xQsJbOuy3Y0jdzhERHFHKGkU+2lMo/QyI+f7ynQ3xQhzFY0oGRiLqRbyacEiaweaBaSi7eq24ihU6UXs=
+    secure: O8JCLLc6v8+eq/o9Qp09TVHie5pVB8x5Kl/mZwTcT7mQOh8cOJFBtvTEAAfWgiJ8SuvvqnvqytX+S4GIa/iqoBZbFkNUk4prXdwtRfc7VLW+d5C9RUIzayifXsIYVRnyvNR3NOnTylgpc3pvKJoxDgi2ZmuqWXErQNmLlaC/GsA=
