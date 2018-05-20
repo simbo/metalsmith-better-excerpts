@@ -12,7 +12,7 @@
   "scripts": {
     "test": "mocha -R spec --harmony",
     "lint": "jshint ./lib/*.js & jscs ./lib/*.js",
-    "watch": "mocha -R spec -w --harmony",
+    "watch": "mocha -R spec -w --harmony"
   },
   "repository": {
     "type": "git",
