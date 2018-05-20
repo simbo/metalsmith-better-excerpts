@@ -32,7 +32,7 @@
   "dependencies": {
     "cheerio": "^0.19.0",
     "lodash": "^3.10.1",
-    "underscore.string": "^3.1.1"
+    "voca": "^1.4.0"
   },
   "devDependencies": {
     "assert-dir-equal": "^1.0.1",
