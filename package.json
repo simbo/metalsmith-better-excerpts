@@ -12,9 +12,7 @@
   "scripts": {
     "test": "mocha -R spec --harmony",
     "lint": "jshint ./lib/*.js & jscs ./lib/*.js",
-    "cover": "node --harmony ./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- -R spec --harmony",
     "watch": "mocha -R spec -w --harmony",
-    "codeclimate": "codeclimate-test-reporter < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -36,7 +34,6 @@
   },
   "devDependencies": {
     "assert-dir-equal": "^1.0.1",
-    "codeclimate-test-reporter": "^0.1.0",
     "istanbul": "^0.3.17",
     "jscs": "^2.0.0",
     "jshint": "^2.8.0",

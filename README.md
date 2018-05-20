@@ -10,8 +10,6 @@ metalsmith-better-excerpts
 [![Dependencies Status](https://img.shields.io/david/simbo/metalsmith-better-excerpts.svg?style=flat-square)](https://david-dm.org/simbo/metalsmith-better-excerpts)
 [![devDependencies Status](https://img.shields.io/david/dev/simbo/metalsmith-better-excerpts.svg?style=flat-square)](https://david-dm.org/simbo/metalsmith-better-excerpts#info=devDependencies)
 [![Travis Build Status](https://img.shields.io/travis/simbo/metalsmith-better-excerpts/master.svg?style=flat-square)](https://travis-ci.org/simbo/metalsmith-better-excerpts)
-[![Code Climate GPA](https://img.shields.io/codeclimate/github/simbo/metalsmith-better-excerpts.svg?style=flat-square)](https://codeclimate.com/github/simbo/metalsmith-better-excerpts)
-[![Code Climate Test Coverage](https://img.shields.io/codeclimate/coverage/github/simbo/metalsmith-better-excerpts.svg?style=flat-square)](https://codeclimate.com/github/simbo/metalsmith-better-excerpts)
 
 
 ## About
